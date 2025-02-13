@@ -1,3 +1,5 @@
+# To run in local
+# clear && python3.11 -m pip install -r requirements.txt && streamlit run app.py
 # Import required libraries
 import streamlit as st  # for creating the web app
 from dotenv import load_dotenv  # for loading API key from .env file
