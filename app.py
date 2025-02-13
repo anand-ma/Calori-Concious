@@ -9,7 +9,8 @@ from PIL import Image  # for handling images
 load_dotenv()
 
 # Set up the Google Gemini AI with your API key
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
 # Function to get AI response about the food image
 def get_gemini_response(image, prompt):
